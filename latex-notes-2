@@ -1,0 +1,38 @@
+%latex入门%
+%第二章%
+\usepackage[greek,english]{babel}---\textgreek{abcde}   %希腊字母 α 等
+‘ ’两个符号，若“ ”与‘ ’连续出现时，在中间用\隔开  %？？是否正确？？
+-用法：-为连字符，--为数字范围，---为破折号
+符号~用$\sim$   英文省略号用\dots
+\# \$ \% \& \{ \} \_ \textbacklash  对应# $ % & { } _ \
+\ 表示空格
+倘若一句话以大协作字母为结束，句号用\@. 
+\linebreak命令指定一行的断点，上一行仍按完整一行散开对齐 例：这是一行文字\linebreak 另一行
+中等       \textmd{}    \mdseries 
+加宽加粗   \textbf{}    \bfseries
+斜体       \textit{}
+意大利     \itshape
+ctex宏包简化了指令，字体改变：\songti \heiti \fangsong \kaishu
+\underline{}下划线
+\zihao{-5}  \zihao{6}
+\linespread{因子}   行距=因子 × 基本行距
+
+%行间距% 利用宏包setspace
+命令形式              环境形式   
+\setstretch           spacing
+\singlespacing        singlespace
+\onehalfspacing       onehalfspace
+\doublespacing        doublespace
+ 
+%字间距%
+\,          0.1667 em     %不可换行
+\!         -0.1667 em     %不可换行
+\enspace    0.5 em        %不可换行
+~           空格          %不可换行 
+\quad       1 em          %可换行
+\qquad      2 em          %可换行
+\enskip     0.5 em        %可换行
+\           空格          %可换行
+
+\hspace{距离}产生水平间距，例如 \hspace{1cm}  %\hspace*{1cm}text 阻止距离被忽略
+
