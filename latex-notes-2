@@ -35,4 +35,66 @@ ctex宏包简化了指令，字体改变：\songti \heiti \fangsong \kaishu
 \           空格          %可换行
 
 \hspace{距离}产生水平间距，例如 \hspace{1cm}  %\hspace*{1cm}text 阻止距离被忽略
+\mbox{}  %不允许断行
+\makebox[宽度][位置]{text}  位置参数可以取：c,l,r,s 默认c
+\fbox 和 \framebox  产生带边框的盒子，语法和\makebox与\mbox类似 
+%而边框与内容的距离由长度变量\fboxsep控制（默认3pt）  \setlength{\fboxsep}{1em}
+
+%正文段落%
+\noindent 段前禁用缩进  \indent 段前使用缩进
+\centering \raggedleft \raggedright 命令
+\begin{center}--\end{center}
+\begin{flushleft}---\end{flushleft}
+\begin{flushright}---\end{flushright}
+导言区\usepackage{lettrine}    \lettrine{首字母}{余下的字母}   %首字母下沉
+
+%文本环境%
+\begin{quote}---\end{quote}             %引用无缩进
+\begin{quotation}---\end{quotation}     %引用有缩进
+
+\begin{abstract}---\end{abstract}       %摘要
+\CTEXoptions[abstractname={摘\quad要}]   %更改摘要标题
+
+\begin{enumerate}---\item……---\end{enumerate}  %数字编号
+\begin{itemize}---\item……---\end{itemize}   %不编号，使用 ·
+\enumerate环境中  \theenumi   计数器  （\arabic{enumi};\roman{enumi};\Roman{enumi}）
+
+\begin{description}---item[内容] 内容的描述 ……---\end{description}
+
+导言区\newtheorem{thm}{定理}   \begin{thm}[定理名称]---内容---\end{thm}
+导言区\newtheorem{lemma}{引理}[chapter]   \begin{lemma}---内容---\end{lemma} %引理按照章节数来
+
+%抄录%
+\verb  符号 抄录内容 符号 %两个符号之间的部分将被使用打字机字体逐字原样输出
+\verb*  符号 抄录内容 符号 %使得输出的空格可见
+\begin{verbatim}---^---\end{verbatim}  环境 %{verbatim*}输出可见空格
+
+%标题和标题页%
+\author{张三\\东南大学 \and 李四\\南京大学}
+
+%页面格式%
+\usepackage{fancyhdr}
+\pagestyle{fancy}   
+\fancyhf{}     %清零
+\cfoot{\thepage}
+
+\lhead{}     \chead{}     \rhead{}   
+\lfoot{}     \cfoot{}     \rfoot{}
+\fancyhead[位置]{}   \fancyfoot[位置]{}   %位置E,O与L,C,R组合
+
+%定义命令与环境%
+\newcommand 命令 [参数个数][首参数默认值]{具体定义}  %例如：\newcommand\prc{people's republic of china}
+又例如：\newcommand\loves[2]{#1 love #2} %宏参数依次编号#1，#2，……使用宏的时候会替换为相应的字符串
+\newenvironment{环境名}[参数个数][首参数默认值]{环境前定义}{环境后定义}
+
+
+
+
+
+
+
+
+
+
+
 
