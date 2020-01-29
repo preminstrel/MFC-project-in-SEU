@@ -1,0 +1,26 @@
+%latex入门%
+%第四章%
+行内公式一般用 $ $,  \( \)
+行间公式用  \[ \], $$ $$, equation环境
+上标^{}, 下标_{}
+'可以与下上标混用，如 b_0' (c')^2
+角度用^\circ
+$\sum\limits_{i=0}^n A_i$  $\sum_{i=0}^n A_i$ (更适合文本段落)
+若要上下标不影响，用幻影  $A_m{}^n$ or $A_m^{\phantom{m}n}$ 
+\overline{}  \underline{}
+宏包amsmath 提供了上下箭头命令如  \overrightarrow{}
+\vec x 向量  但是箭头不可以伸长，适用于一个字母
+\overbrace{}^{\text{}}  \underbrace{}^{\text{}}
+\frac{分子}{分母}
+指定比较大或者比较小的分式的时候，则可以使用amsmath提供的 \dfrac  和  \tfrace 分别指定显示格式与正文格式
+如：\tfrac 12 f(x) = \frac{1}{\dfrac 1a + \dfrac 1b +c}
+ \[  \cfrac{1}{1+\cfrac{2}{1+\cfrac{3}{1+x}}} =\cfrac[r]{1}{1+\cfrac{2}{1+\cfrac[l]{3}{1+x}}}   \]  %连分式，带一个可选参数l，c，r
+ \sqrt[次数]{被开数}
+ \mathstruct 表示有一个圆括号高度和深度的支架
+ 矩阵 matrix（光）    bmatrix（正）     vmatrix（行列式）   pmartix（括号）
+ 矩阵中常用省略号： \dots \ddots \vdots \hdotsfor{}\\
+ 小写希腊字母 \alpha \beta \gamma \delta \epsilon \zeta \eta \theta 
+ \lambda \pi \xi \tau \varepsilon \omega \rho \mu \varohi  (详情见p255)
+ 数学加粗用 \mathbf
+ 数学中只有变量用默认的意大利体，一般都用罗马体$\mathrm{}$
+\lim_{k\to\infty} 在行间最好
