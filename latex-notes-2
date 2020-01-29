@@ -1,0 +1,100 @@
+%latex入门%
+%第二章%
+\usepackage[greek,english]{babel}---\textgreek{abcde}   %希腊字母 α 等
+‘ ’两个符号，若“ ”与‘ ’连续出现时，在中间用\隔开  %？？是否正确？？
+-用法：-为连字符，--为数字范围，---为破折号
+符号~用$\sim$   英文省略号用\dots
+\# \$ \% \& \{ \} \_ \textbacklash  对应# $ % & { } _ \
+\ 表示空格
+倘若一句话以大协作字母为结束，句号用\@. 
+\linebreak命令指定一行的断点，上一行仍按完整一行散开对齐 例：这是一行文字\linebreak 另一行
+中等       \textmd{}    \mdseries 
+加宽加粗   \textbf{}    \bfseries
+斜体       \textit{}
+意大利     \itshape
+ctex宏包简化了指令，字体改变：\songti \heiti \fangsong \kaishu
+\underline{}下划线
+\zihao{-5}  \zihao{6}
+\linespread{因子}   行距=因子 × 基本行距
+
+%行间距% 利用宏包setspace
+命令形式              环境形式   
+\setstretch           spacing
+\singlespacing        singlespace
+\onehalfspacing       onehalfspace
+\doublespacing        doublespace
+ 
+%字间距%
+\,          0.1667 em     %不可换行
+\!         -0.1667 em     %不可换行
+\enspace    0.5 em        %不可换行
+~           空格          %不可换行 
+\quad       1 em          %可换行
+\qquad      2 em          %可换行
+\enskip     0.5 em        %可换行
+\           空格          %可换行
+
+\hspace{距离}产生水平间距，例如 \hspace{1cm}  %\hspace*{1cm}text 阻止距离被忽略
+\mbox{}  %不允许断行
+\makebox[宽度][位置]{text}  位置参数可以取：c,l,r,s 默认c
+\fbox 和 \framebox  产生带边框的盒子，语法和\makebox与\mbox类似 
+%而边框与内容的距离由长度变量\fboxsep控制（默认3pt）  \setlength{\fboxsep}{1em}
+
+%正文段落%
+\noindent 段前禁用缩进  \indent 段前使用缩进
+\centering \raggedleft \raggedright 命令
+\begin{center}--\end{center}
+\begin{flushleft}---\end{flushleft}
+\begin{flushright}---\end{flushright}
+导言区\usepackage{lettrine}    \lettrine{首字母}{余下的字母}   %首字母下沉
+
+%文本环境%
+\begin{quote}---\end{quote}             %引用无缩进
+\begin{quotation}---\end{quotation}     %引用有缩进
+
+\begin{abstract}---\end{abstract}       %摘要
+\CTEXoptions[abstractname={摘\quad要}]   %更改摘要标题
+
+\begin{enumerate}---\item……---\end{enumerate}  %数字编号
+\begin{itemize}---\item……---\end{itemize}   %不编号，使用 ·
+\enumerate环境中  \theenumi   计数器  （\arabic{enumi};\roman{enumi};\Roman{enumi}）
+
+\begin{description}---item[内容] 内容的描述 ……---\end{description}
+
+导言区\newtheorem{thm}{定理}   \begin{thm}[定理名称]---内容---\end{thm}
+导言区\newtheorem{lemma}{引理}[chapter]   \begin{lemma}---内容---\end{lemma} %引理按照章节数来
+
+%抄录%
+\verb  符号 抄录内容 符号 %两个符号之间的部分将被使用打字机字体逐字原样输出
+\verb*  符号 抄录内容 符号 %使得输出的空格可见
+\begin{verbatim}---^---\end{verbatim}  环境 %{verbatim*}输出可见空格
+
+%标题和标题页%
+\author{张三\\东南大学 \and 李四\\南京大学}
+
+%页面格式%
+\usepackage{fancyhdr}
+\pagestyle{fancy}   
+\fancyhf{}     %清零
+\cfoot{\thepage}
+
+\lhead{}     \chead{}     \rhead{}   
+\lfoot{}     \cfoot{}     \rfoot{}
+\fancyhead[位置]{}   \fancyfoot[位置]{}   %位置E,O与L,C,R组合
+
+%定义命令与环境%
+\newcommand 命令 [参数个数][首参数默认值]{具体定义}  %例如：\newcommand\prc{people's republic of china}
+又例如：\newcommand\loves[2]{#1 love #2} %宏参数依次编号#1，#2，……使用宏的时候会替换为相应的字符串
+\newenvironment{环境名}[参数个数][首参数默认值]{环境前定义}{环境后定义}
+
+
+
+
+
+
+
+
+
+
+
+
