@@ -1,2 +1,2 @@
-# southeast
-Maths，EE，CS
+# This is just for latex learning notes.
+Latex.
