@@ -1,2 +1,2 @@
-# southeast
-Maths，EE，CS
+# SEU
+EE，CS
