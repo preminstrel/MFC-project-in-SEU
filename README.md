@@ -5,7 +5,7 @@
 [![Open Source Love](https://img.shields.io/badge/-%E2%9D%A4%20Open%20Source-Green?style=flat-square&logo=Github&logoColor=white&link=https://hollowman6.github.io/fund.html)](https://hollowman6.github.io/fund.html)
 [![GPL Licence](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/GPL-3.0/)
 [![Repo-Size](https://img.shields.io/github/repo-size/preminstrel/MFC-project-in-SEU.svg)](../../archive/master.zip)
-@create 2020-8
+
 > A caculator which includes many functions.
 ## In the project, you can get:
 - Basic codes for calculator.
