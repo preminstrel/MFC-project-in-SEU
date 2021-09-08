@@ -10,6 +10,6 @@
 - Basic codes for calculator.
 - Codes for advanced functions.
 - Words and PPT for presentation.
-> Mention: 
+
 > The environment which project adopt is MircoSoft Visual Studio 2019.  
 > Also, I recommend that VS Code. 
