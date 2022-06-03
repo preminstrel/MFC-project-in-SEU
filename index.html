@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Atom-Molecule Calculator</title>
+
+
+<meta property="og:title" content="Atom-Molecule Calculator">
+
+<script type="text/javascript">
+// redefining default features
+var _POPUP_FEATURES = 'width=500,height=300,resizable=1,scrollbars=1,titlebar=1,status=1';
+</script>
+<link media="all" href="glab.css" type="text/css" rel="StyleSheet">
+<style type="text/css" media="all">
+IMG {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FLOAT: right;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+#primarycontent {
+	MARGIN-LEFT: auto; ; WIDTH: expression(document.body.clientWidth >1000? "1000px": "auto" ); MARGIN-RIGHT: auto; TEXT-ALIGN: left; max-width:
+1000px }
+BODY {
+	TEXT-ALIGN: center
+}
+TABLE {
+  VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+BODY {
+  FONT-SIZE: small; COLOR: black; FONT-FAMILY: Georgia, "New Century Schoolbook", Times, serif; BACKGROUND-COLOR: white
+}
+H1 {
+  FONT-WEIGHT: normal
+}
+H2 {
+  MARGIN-TOP: 12px; FONT-WEIGHT: normal; MARGIN-BOTTOM: 0px; COLOR: #990000
+}
+H3 {
+  MARGIN-TOP: 6px; FONT-SIZE: small; MARGIN-BOTTOM: 0px
+}
+P {
+  MARGIN-TOP: 0px
+}
+A {
+  FONT-WEIGHT: bolder; TEXT-DECORATION: none
+}
+A:link {
+  COLOR: #990000
+}
+A:visited {
+  COLOR: #244bd8
+}
+UL {
+  MARGIN-TOP: 1px; MARGIN-BOTTOM: 15px
+}
+BLOCKQUOTE {
+  MARGIN-LEFT: 6em; TEXT-INDENT: -4em
+}
+BLOCKQUOTE P {
+  MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+#menu {
+  BACKGROUND-COLOR: transparent
+}
+#menu A {
+  DISPLAY: block; COLOR: #666666
+}
+#menu A:hover {
+  COLOR: white; BACKGROUND-COLOR: #990000
+}
+#menu TD {
+  PADDING-RIGHT: 0px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 10px/15px Verdana, Lucida, Arial, sans-serif; WIDTH: 100px; COLOR: black; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#internalmenu TD {
+  PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: white; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 10px/15px Verdana, Lucida, Arial, sans-serif; COLOR: black; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#internalmenu A {
+  DISPLAY: block; COLOR: #666666
+}
+#content {
+  CLEAR: right
+}
+#sidebar {
+  PADDING-RIGHT: 25px; MARGIN-TOP: 0.5em; TEXT-ALIGN: right
+}
+#sidebar IMG {
+  MARGIN: 45px 0px 5px
+}
+#sidebar H2 {
+  FONT-WEIGHT: normal; FONT-SIZE: smaller; MARGIN: 0px
+}
+#primarycontent {
+  LINE-HEIGHT: 1.5; PADDING-TOP: 25px
+}
+#footer {
+  CLEAR: both; FONT-SIZE: x-small; PADDING-BOTTOM: 10px; PADDING-TOP: 20px
+}
+#projectlist IMG {
+  PADDING-RIGHT: 10px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; PADDING-TOP: 3px
+}
+#projectlist TABLE {
+  PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; BORDER-COLLAPSE: collapse; border-spacing: 0
+}
+#summary TD {
+  BORDER-RIGHT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: #999999 1px solid; PADDING-LEFT: 5px; MARGIN: 0px; BORDER-LEFT: 0px
+}
+#people {
+  PADDING-LEFT: 10px; MARGIN-LEFT: 0px; LIST-STYLE-TYPE: none
+}
+DIV.abstract {
+  CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: #999999 1px solid; MARGIN-TOP: 25px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+DIV.abstract PRE {
+  FONT-SIZE: xx-small; MARGIN: 0px
+}
+DIV.abstract H2 {
+  
+}
+DIV.abstract IMG {
+  PADDING-RIGHT: 0px; PADDING-LEFT: 12px; FLOAT: right; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+DIV.abstract LI {
+  MARGIN: 0px
+}
+DIV.timestamp {
+  DISPLAY: block; FONT-SIZE: x-small; COLOR: #999999; PADDING-TOP: 10px; BORDER-BOTTOM: #999999 1px solid; TEXT-ALIGN: right
+}
+.hide {
+  DISPLAY: none
+}
+#courses TD {
+  PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+TD.coursename {
+  FONT-WEIGHT: bolder
+}
+
+
+</style>
+
+<body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+
+<div id="primarycontent">
+<center><h1>Atom-Molecule Calculator (2020 Summer C++ MFC Project in SEU)</h1></center>
+<center><h2><a>Hanshi Sun</a>&nbsp;&nbsp;&nbsp;
+  <a>Yang Zhang&nbsp;&nbsp;&nbsp;Xuming Che&nbsp;&nbsp;&nbsp;Xingyu Tao</a>
+</h2></center>
+
+<center><h2><a href="https://www.seu.edu.cn/english/">Southeast University</a></h2></center>
+<center><h2>Nanjing, China</h2></center>
+<center><h2><strong><a href="https://github.com/preminstrel/MFC-project-in-SEU">Report</a> | <a href="https://github.com/preminstrel/MFC-project-in-SEU">Code</a> | <a href="https://github.com/preminstrel/MFC-project-in-SEU">Slides</a></strong> </h2></center>
+
+
+<p><center>
+    <table><tr>
+    <td><img src=imgs/logo.png height="250" border=0></td>
+    <td><img src=imgs/fun.png height="250" border=0></td>
+    <td><img src=imgs/diff.png height="250" border=0></td>
+    </tr></table>
+    </center>
+    </p>
+
+<h2>Abstract</h2>
+
+<div style="font-size:14px"><p align="justify">Firstly, the basic calculator functions (Atom-Calculate) are implemented, such as addition, subtraction, multiplication and division with parentheses and mixed operations with arbitrary squares, and further functional operations on the resultant Ans, such as trigonometric functions, logarithmic functions, etc. Further, menu functions have been created and improved in the dialogs. In addition to the basic functions such as Help, contact us, etc., a new Molecule mode function has been added for more powerful arithmetic and mathematical functions, such as: solving linear equations, solving multiple equations in one element, matrix operations, complex number operations, date conversion, decomposition of prime factors, time conversion, simple integral calculations, multi-decimal conversion, etc. (Molecule- Calculate). Drawmode has been added, which can be used for drawing. In addition, Leisure mode has been added, linking several mini-games that are not fully encapsulated with the calculator system. Finally, in order to improve user-friendliness and security, the developed interface will be beautified, and user login passwords and other features will be added to improve security.
+    The system inherits most of the features of the common calculator systems, especially in addition, subtraction, multiplication and division with brackets and mixed operations with arbitrary squares. The main innovation of this system is that it is not only limited to ordinary calculator programs, but also adds new functions in the mode Molecule-Calculate such as solving linear equations, solving multiple equations in one element, matrix operations, complex number operations, date conversion, decomposition of prime factors, time conversion, simple integral calculations, and multi-decimal conversions. Drawmode has been added, which can be used for drawing.</p></div>
+
+<!-- <a><img src="imgs/paper_shot.png" style="float: left; padding: 10px; PADDING-RIGHT: 30px;" alt="paper thumbnail"; width="170"></a>
+<br>
+
+
+
+<h2>Paper</h2>
+<p><a href="https://arxiv.org/pdf/2202.12943">arxiv 2202.12943, 2022</a></p>
+
+
+
+<h2>Citation</h2>
+<p>Hanshi Sun, Ao Wang, Ninghao Pu, Zhiqing Li, Junguang Huang, Hao Liu, Zhi Qi. "Arrhythmia Classifier Using Convolutional Neural Network with Adaptive Loss-aware Multi-bit Networks Quantization". arXiv preprint arXiv:2202.12943 (2022).
+<br>
+<a href="cite.txt">Bibtex</a>
+</p>
+<br>
+
+<br> -->
+<!-- <h2>Acknowledgment</h2>
+<p align="justify">We thank SEU.</p> -->
+
+
+</ul></div></body>
