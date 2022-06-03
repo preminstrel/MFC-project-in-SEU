@@ -1,7 +1,6 @@
 # 2020 Summer C++ MFC project in SEU
 ### Atom-Molecule Calculate
-<img alt="C++" src="https://img.shields.io/badge/-C++-525288?style=flat-square&logo=c%2B%2B&logoColor=white" />
-![MIT Licence](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+<img alt="C++" src="https://img.shields.io/badge/-C++-525288?style=flat-square&logo=c%2B%2B&logoColor=white" /> <img alt="MIT" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" />
 
 > A calculator which includes many functions.
 ## In the project, you can get:
